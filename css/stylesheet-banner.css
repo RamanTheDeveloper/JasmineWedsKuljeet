@@ -1,0 +1,248 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*CSS for banner: Start*/
+.background-image{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: url(../images/pic10.jpg);
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.container h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.container h1 span{
+    border: 10px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.des{
+    margin: 20px;
+    display: block;
+    font-size: 20px;
+    text-shadow: 0 0 10px black;
+}
+
+.btn{
+    color: #313131;
+    padding: 10px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #f1f1f1;
+    border-radius: 8px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+/*CSS for banner: End*/
+
+
+
+/*CSS for RSVP Form: Start*/
+.rsvp-form{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.form{
+    width: 320px;
+    margin: 20px auto;
+	text-align: left;
+    color: black;
+}
+
+#h1{
+    text-align: center;
+    text-decoration: underline;
+    list-style: none;
+    color: #000;
+}
+
+label{
+    display: block;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+input, textarea{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    background-color: #FAFAFA;
+}
+
+.number{
+    width: 50px;
+}
+
+.radio{
+    display: inline;
+    margin: 5px;
+}
+
+.submit{
+    color: black;
+    padding: 10px 24px;
+    margin: 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #A2BDBE;
+    border-radius: 8px;
+    transition: 0.3s all;
+    cursor: pointer;
+    
+}
+
+.submit:hover{
+    opacity: 0.7;
+}
+
+/*CSS for RSVP Form: End*/
+
+
+/*CSS for Navbar: Start*/
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.nav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 9px 25px;
+}
+
+.logo{
+    flex: 1 1 auto;
+    margin-left: 15%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+a{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.logo:hover{
+    color: red;
+    transition: all 0.3s ease 0s;
+}
+/*CSS for Navbar: End*/
+
+
+/*CSS for Images: Start*/
+.images-div{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    margin: 20px auto;
+}
+  
+.carousel-container img{
+   width: 500px;
+   height: 500px;
+   animation: ani 2s linear;
+}
+
+@keyframes ani{
+    0%{transform: scale(1.2);}
+    10%{transform: scale(1);}
+    100%{transform: scale(1);}
+}
+  
+.carousel-container{
+    width: 500px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    border: 3px solid rgb(36, 33, 33);
+    box-shadow: 3px 10px 8px #888888;
+    overflow: hidden;
+}
+  
+.carousel-slide{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+  
+
+/*CSS for Images: End*/
+
+
+/*CSS for Locations div: Start*/
+.locs-div{
+    position: relative;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+.grid{
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.grid img{
+    height: 300px;
+    width: 600px;
+}
+/*CSS for Locations div: End*/
+

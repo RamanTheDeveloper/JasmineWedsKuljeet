@@ -1,0 +1,172 @@
+<!--https://www.youtube.com/watch?v=7cwRaTqR4k0-->
+<!--Website to copy: https://charlotte-demo.squarespace.com/?nochrome=true
+    Website builder: https://heptagon-crow-a46e.squarespace.com/config/pages-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jasmine Weds Kuljeet</title>
+        <link rel="stylesheet" href="css/stylesheet-banner.css">
+    </head>
+    <body>
+         <!--Corona notification
+         <script type="text/javascript">
+            alert('Due to COVID-19 situation, the wedding dates have been postponed.\nAs soon as we get the dates we will inform you guys.\nThank you for understanding!');
+        </script>-->
+
+
+        <!--Nav bar on top-->
+        <div class="navbar" id="navbar">
+            <ul class="nav">
+                <li><a href="#locs">Ceremonies</a></li>
+                <li><a href="#pics">Pictures</a></li>
+            </ul>
+            <a href="#" class="logo">J & K</a>
+            <ul class="nav">
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!--Background image container-->
+        <div class="background-image">
+            <div class="container">
+                <h1><span>Jasmine weds Kuljeet</span></h1>
+                <span class="des">Postponed dates: <u>October 23 & 24, 2020</u></span>
+                <a name="rsvp" class="btn" href="#rsvp">RSVP</a>
+            </div>
+        </div>
+
+        <!--Javascript code for nav bar-->
+        <script type="text/javascript">
+            var nav = document.getElementById("navbar");
+
+            window.onscroll = function(){
+                if(window.pageYOffset > 300){
+                    nav.style.background = "#1C1C1C";
+                }
+                else{
+                    nav.style.background = "transparent";
+                }
+            }
+        </script>
+
+        <!--RSVP form submission-->
+        <div class="rsvp-form">
+            <a name="rsvp"><h1 id="h1">RSVP</h1></a>
+            <form class="form" action="contactform.php" method="POST">
+                <label>Full name</label>
+                <input type="text" name="name" placeholder="Enter your full name" size="25" value="" required>
+
+                <label>E-mail</label>
+                <input type="text" name="email" value="" placeholder="Your email" size="35" required>
+
+                <label>Total people attending</label>
+                <input class="number" type="number" value="" name="number" required>
+
+                <label>Choose your side</label>
+                <input class="radio" type="radio" name="side" value="Groom"> Groom</input>
+                <input class="radio" type="radio" name="side" value="Bride"> Bride</input>
+
+                <label>Song suggestions</label>
+                <textarea rows="5" cols="50" name="songs" value="" placeholder="Are there songs you want the DJ to play at the wedding? Leave them here..."></textarea><br>
+
+                <input type="submit" class="submit" name="submit" value="Submit">
+            </form>
+        </div>
+
+
+       <!--Images-->
+       <div class="images-div">
+        <a name="pics"><h1 id="h1">Pictures</h1></a>
+        <div class="carousel-container" id="img">
+            <img src="images/test/pic2.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        var img = document.getElementById("img");
+
+        var images = ['images/test/pic3.jpg', 'images/test/pic4.jpg', 'images/test/pic5.jpg', 'images/test/pic17.jpg', 'images/test/pic2.jpg'];
+
+        var x = 0;
+
+        function slide(){
+            if(x < images.length){
+                x += 1;
+            }
+            else{
+                x = 1;
+            }
+            img.innerHTML = "<img src="+images[x-1]+">";
+        }
+
+        //auto slider
+        setInterval(slide, 2000);
+    </script>
+
+
+        <!--Location-->
+        <div class="locs-div">
+            <a name="locs"><h1 id="h1">Ceremonies</h1></a>
+            <div class="grid">
+                <center><h2><u>Anand Karaj</u></h2>
+                <img src="images/gurudwara.jfif" alt="">
+                <p><b>Nanaksar Thath Isher Darbar Gurudwara</b><br>
+                    <i>9954 The Gore Road <br>
+                    Brampton, ON L6P 0A7</i>
+                </p>
+                <br>
+                <p><b>On Friday, <u>October 23 2020: </u></b></p>
+                <p>
+                    Departure of Barat.....8:30 A.M<br>
+                    Milni & Tea.................9:30 A.M<br>
+                    Anand Karaj.............10:30 A.M<br>
+                    Guru Ka Langar........12:00 P.M
+                </p></center>
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.898220355136!2d-79.69074176965522!3d43.79077264239922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ccacb47e4fb%3A0x81ed15bd618b69b7!2sNanaksar%20Thath%20Isher%20Darbar!5e0!3m2!1sen!2sbe!4v1580912922400!5m2!1sen!2sbe" 
+                    width="600px" height="450px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="grid">
+                <center><h2><u>Wedding Reception</u></h2>
+                    <img src="images/versailles.jfif" alt="">
+                    <p><b>Apollo Convention Centre</b><br>
+                        <i>6591 Innovator Drive <br>
+                        Mississauga, ON L5T 2V8</i>
+                    </p>
+                    <br>
+                    <p><b>On Saturday, <u>October 24 2020: </u></b></p>
+                    <p>
+                        Cocktails........6:00 P.M<br>
+                        Reception.......7:00 P.M<br>
+                        Dinner...........10:00 P.M
+                    </p></center>
+
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1298504676593!2d-79.68911928502476!3d43.64546667912155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3f73ccd3bd0f%3A0xc1bf106a3b7e24dc!2sApollo%20Convention%20Centre!5e0!3m2!1sen!2sbe!4v1586864179832!5m2!1sen!2sbe" 
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <br><br><br>
+        </div>
+        <br><br><br>
+
+        <!--Contact
+        <div class="footer">
+            <center><a name="contact"><h1 id="h1"><u>Contact</u></h1></a>
+            <p>
+            Jasmine Dhawan<br>
+            jasdhawan@gmail.com<br>
+            647 802-2704
+            </p>
+            <br>
+            <p>
+            Jaspreet Jassal<br>
+            jazz_bedi@yahoo.ca<br>
+            647 995 6107
+            </p></center>
+        </div>-->
+    </body>
+    </html>
